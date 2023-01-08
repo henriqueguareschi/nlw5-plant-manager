@@ -1,4 +1,8 @@
+import { useNavigation } from "@react-navigation/native";
+import { Button } from "../components/Button";
+import colors from "../styles/colors.ts";
 import React, { useState } from "react";
+import fonts from "../styles/fonts.ts";
 import {
   StyleSheet,
   SafeAreaView,
@@ -9,10 +13,6 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
 } from "react-native";
-import { useNavigation } from "@react-navigation/native";
-import { Button } from "../components/Button";
-import colors from "../styles/colors.ts";
-import fonts from "../styles/fonts.ts";
 
 export function UserIdentification() {
   const [isFocused, setIsFocused] = useState(false);
